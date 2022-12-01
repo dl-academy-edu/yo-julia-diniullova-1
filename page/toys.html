@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <a href="/index.html" class="header__link">
-            <img src="./img/icon/logo.svg" alt="logo" class="header__logo">
+            <img src="/img/icon/logo.svg" alt="logo" class="header__logo">
         </a>
         <nav class="header__nav">
             <ul class="header__list">
@@ -27,7 +27,7 @@
         <ul class="header__list">
             <li class="header__list-item">
                 <a href="#" class="header__list-item-link">
-                    <img src="./img/icon/loupe.svg" alt="loupe" class="header__list-item-loupe">
+                    <img src="/img/icon/loupe.svg" alt="loupe" class="header__list-item-loupe">
                 </a>
             </li>
             <li class="header__list-item">
@@ -35,7 +35,128 @@
             </li>
         </ul>
     </header>
-
+    <main>
+        <section class="kids">
+            <h1 class="kids__title">Toy for kids</h1>
+            <div class="kids__path">
+                <p class="kids__subtitle">Home</p>
+                <p class="kids__subtitle">Catalog</p>
+                <p class="kids__subtitle">Toys</p>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="filter__cost">
+                <label>
+                    Cost
+                    <input type="range">
+                </label>
+                <span>0</span>
+                <span>500</span>
+            </div>
+            <div class="filter__color">
+                <fieldset>
+                    Color
+                    <label>
+                        Black
+                        <input type="checkbox" checked>
+                    </label>
+                    <label>
+                        Blue
+                        <input type="checkbox">
+                    </label>
+                    <label>
+                        Green
+                        <input type="checkbox">
+                    </label>
+                    <label>
+                        White
+                        <input type="checkbox">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="filter__delivery">
+                <fieldset>
+                    Delivery
+                    <label>
+                        Free shipping
+                        <input type="radio">
+                    </label>
+                    <label>
+                        Fast shipping
+                        <input type="radio" checked>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="filter__amount">
+                <fieldset>
+                    Amount
+                    <label>
+                        0-5
+                        <input type="radio" checked>
+                    </label>
+                    <label>
+                        10-20
+                        <input type="radio">
+                    </label>
+                    <label>
+                        20-50
+                        <input type="radio">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="filter__apply">
+                <button class="filter__apply-btn">Apply</button>
+            </div>
+        </section>
+        <section class="toys">
+            <div class="toys__catalog">
+                <ul class="toys__catalog-list">
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385">
+                        <p class="toys__catalog-list-desc">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="toys__catalog-list-price">$60.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/frames.jpg" alt="frames" width="380" height="385">
+                        <p class="toys__catalog-list-desc">BRASS DECO FRAMES</p>
+                        <p class="toys__catalog-list-price">$66.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/apron.jpg" alt="apron" width="380" height="385">
+                        <p class="toys__catalog-list-desc">CIBO FULL APRON</p>
+                        <p class="toys__catalog-list-price">$60.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/machine.jpg" alt="machine" width="380" height="385">
+                        <p class="toys__catalog-list-desc">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="toys__catalog-list-price">$56.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/candle.jpg" alt="candle" width="380" height="385">
+                        <p class="toys__catalog-list-desc">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="toys__catalog-list-price">$29.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385">
+                        <p class="toys__catalog-list-desc">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="toys__catalog-list-price">$56.00 USD</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="toys__pages">
+                <button class="toys__pages-btn">
+                    <img src="/img/icon/btn_left.svg" alt="left">
+                </button>
+                <button class="toys__pages-num">1</button>
+                <button class="toys__pages-num">2</button>
+                <button class="toys__pages-num">3</button>
+                <button class="toys__pages-num">4</button>
+                <button class="toys__pages-btn">
+                    <img src="/img/icon/btn_right.svg" alt="right">
+                </button>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer__navigation">
             <p class="footer__navigation-title">Navigation</p>
@@ -94,22 +215,22 @@
             <ul class="footer__connect-list">
                 <li class="footer__connect-list-item">
                     <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
+                        <img src="/img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
                     </a>
                 </li>
                 <li>
                     <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/twitter.svg" alt="twitter" class="footer__connect-list-item-link-img">
+                        <img src="/img/icon/twitter.svg" alt="twitter" class="footer__connect-list-item-link-img">
                     </a>
                 </li>
                 <li>
                     <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/pinterest.svg" alt="pinterest" class="footer__connect-list-item-link-img">
+                        <img src="/img/icon/pinterest.svg" alt="pinterest" class="footer__connect-list-item-link-img">
                     </a>
                 </li>
                 <li>
                     <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/instagram.svg" alt="instagram" class="footer__connect-list-item-link-img">
+                        <img src="/img/icon/instagram.svg" alt="instagram" class="footer__connect-list-item-link-img">
                     </a>
                 </li>
             </ul>
