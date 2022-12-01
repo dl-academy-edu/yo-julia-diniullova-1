@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <a href="/index.html" class="header__link">
             <img src="/img/icon/logo.svg" alt="logo" class="header__logo">
         </a>
         <nav class="header__nav">
-            <ul class="header__list">
+            <ul class="header__list undotted">
                 <li class="header__list-item">
                     <a href="./blog.html" class="header__list-item-link">Blog</a>
                 </li>
@@ -24,19 +29,19 @@
                 </li>
             </ul>
         </nav>
-        <ul class="header__list">
+        <ul class="header__list undotted">
             <li class="header__list-item">
                 <a href="#" class="header__list-item-link">
                     <img src="/img/icon/loupe.svg" alt="loupe" class="header__list-item-loupe">
                 </a>
             </li>
             <li class="header__list-item">
-                <a href="/" class="header__list-item-link">Contact Us</a>
+                <a href="/" class="header__list-item-link fatty">Contact Us</a>
             </li>
         </ul>
     </header>
     <main>
-        <section class="contact">
+        <section class="contact container">
             <h1 class="contact__title">Contact  Us</h1>
             <div class="contact__path">
                 <p>Home</p>
@@ -80,12 +85,12 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__navigation">
+        <div class="footer__navigation container">
             <p class="footer__navigation-title">Navigation</p>
             <nav class="footer__navigation-nav">
-                <ul class="footer__navigation-nav-list">
+                <ul class="footer__navigation-nav-list undotted">
                     <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item">About Us</a>
+                        <a href="#" class="footer__navigation-nav-list-item-link">About Us</a>
                     </li>
                     <li class="footer__navigation-nav-list-item">
                         <a href="#" class="footer__navigation-nav-list-item-link">Blog</a>
@@ -105,10 +110,10 @@
                 </ul>
             </nav>
         </div>
-        <div class="footer_information">
+        <div class="footer_information container">
             <p class="footer_information-title">Customer Information</p>
             <nav class="footer_information-nav"> 
-                <ul class="footer_information-nav-list">
+                <ul class="footer_information-nav-list undotted">
                     <li class="footer_information-nav-list-item">
                         <a href="#" class="footer_information-nav-list-item-link">Contact Us</a>
                     </li>
@@ -130,11 +135,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="footer__connect">
+        <div class="footer__connect container">
             <p class="footer__connect-title">Connect</p>
             <input type="text" name="text" placeholder="Email" class="footer__connect-input">
             <button class="footer__connect-button">Join</button>
-            <ul class="footer__connect-list">
+            <ul class="footer__connect-list undotted">
                 <li class="footer__connect-list-item">
                     <a href="#" class="footer__connect-list-item-link">
                         <img src="/img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
@@ -157,8 +162,8 @@
                 </li>
             </ul>
         </div>
-        <div class="footer__bottom">
-            <ul class="footer__bottom-list">
+        <div class="footer__bottom container">
+            <ul class="footer__bottom-list undotted">
                 <li class="footer__bottom-list-item">
                     Company Rating 
                     <input type="radio" name="rating" value="1" checked class="footer__bottom-list-item-star">
@@ -168,7 +173,7 @@
                     <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
                 </li>
                 <li class="footer__bottom-list-item">Copyright © 2018 Dlk • Design Life Kids</li>
-                <li class="footer__bottom-list-item">Web Design — Direct Line Development</li>
+                <li class="footer__bottom-list-item transparent">Web Design — Direct Line Development</li>
             </ul>
         </div>
     </footer>
