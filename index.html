@@ -4,42 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>DLK</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header container">
         <a href="/" class="header__link">
             <img src="./img/icon/logo.svg" alt="logo" class="header__logo">
         </a>
         <nav class="header__nav">
-            <ul class="header__list">
+            <ul class="header__list undotted">
                 <li class="header__list-item">
-                    <a href="#" class="header__list-item-link">Blog</a>
+                    <a href="./page/blog.html" class="header__list-link">Blog</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-item-link">Catalog</a>
+                    <a href="./page/catalog.html" class="header__list-link">Catalog</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-item-link">About Us</a>
+                    <a href="#" class="header__list-link">About Us</a>
                 </li>
             </ul>
         </nav>
-        <ul class="header__list">
+        <ul class="header__list undotted">
             <li class="header__list-item">
-                <a href="#" class="header__list-item-link">
-                    <img src="./img/icon/loupe.svg" alt="loupe" class="header__list-item-loupe">
+                <a href="#" class="header__list-link">
+                    <img src="./img/icon/loupe.svg" alt="loupe" class="header__list-loupe">
                 </a>
             </li>
             <li class="header__list-item">
-                <a href="#" class="header__list-item-link">Contact Us</a>
+                <a href="./page/contact.html" class="header__list-link fatty">Contact Us</a>
             </li>
         </ul>
     </header>
     <main class="main">
-        <section class="collection">
+        <section class="collection container">
             <div class="collection__switch">
                 <span class="collection__switch-num">01</span>
-                <ul class="collection__switch-list">
+                <ul class="collection__switch-list undotted">
                     <li class="collection__switch-list-item">
                         <button class="collection__switch-list-item-button"></button>
                     </li>
@@ -61,10 +66,10 @@
             </div>
             <p class="collection__sub-subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
-        <section class="category">
+        <section class="category container">
             <div class="category__products">
                 <h2 class="category__products-title">Category Products</h2>
-                <ul class="category__products-list">
+                <ul class="category__products-list undotted">
                     <li class="category__products-list-item">
                         <a href="#" class="category__products-list-item-link">
                             <img src="./img/apparel_kids.png" alt="apparel kids" width="244" height="177" class="category__products-list-item-img">
@@ -101,7 +106,7 @@
                 <p class="category__switch-subtitle">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
         </section>
-        <section class="delivery">
+        <section class="delivery container">
             <img class="delivery__img" src="./img/dress.jpg" alt="dress" width="480" height="559">
             <div class="delivery__text">
                 <h2 class="delivery__text-title">Delivery</h2>
@@ -113,8 +118,8 @@
                 <a href="#" class="delivery__text-link">LEARN MORE</a>
             </div>
         </section>
-        <section class="awards">
-            <ul class="awards__list">
+        <section class="awards container">
+            <ul class="awards__list undotted">
                 <li class="awards__list-item">
                     <img src="./img/mail.png" alt="mail" width="193" height="60" class="awards__list-item-img">
                 </li>
@@ -130,24 +135,24 @@
             </ul>
         </section>
     </main>
-    <section class="design">
+    <section class="design container">
         <h2 class="design__title">Design Life Kids</h2>
         <p class="design__subtitle">About Us</p>
         <p class="design__subtitle">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
         <a href="#" class="design__link">buy now</a>
-    </section>
-    <article class="contacts">
+    </section> 
+    <article class="contacts container">
         <h2 class="contacts__title">Contacts</h2>
         <p class="contacts__subtitle">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.58601728222!2d-122.4236554651123!3d37.776304100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809eb08736cb%3A0xd0499d3f418e942d!2zNzcgRmVsbCBTdCwgU2FuIEZyYW5jaXNjbywgQ0EgOTQxMDIsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1668937738385!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
     <footer class="footer">
-        <div class="footer__navigation">
+        <div class="footer__navigation container">
             <p class="footer__navigation-title">Navigation</p>
             <nav class="footer__navigation-nav">
-                <ul class="footer__navigation-nav-list">
+                <ul class="footer__navigation-nav-list undotted">
                     <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item">About Us</a>
+                        <a href="#" class="footer__navigation-nav-list-item-link">About Us</a>
                     </li>
                     <li class="footer__navigation-nav-list-item">
                         <a href="#" class="footer__navigation-nav-list-item-link">Blog</a>
@@ -167,10 +172,10 @@
                 </ul>
             </nav>
         </div>
-        <div class="footer_information">
+        <div class="footer_information container">
             <p class="footer_information-title">Customer Information</p>
             <nav class="footer_information-nav"> 
-                <ul class="footer_information-nav-list">
+                <ul class="footer_information-nav-list undotted">
                     <li class="footer_information-nav-list-item">
                         <a href="#" class="footer_information-nav-list-item-link">Contact Us</a>
                     </li>
@@ -192,11 +197,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="footer__connect">
+        <div class="footer__connect container">
             <p class="footer__connect-title">Connect</p>
             <input type="text" name="text" placeholder="Email" class="footer__connect-input">
             <button class="footer__connect-button">Join</button>
-            <ul class="footer__connect-list">
+            <ul class="footer__connect-list undotted">
                 <li class="footer__connect-list-item">
                     <a href="#" class="footer__connect-list-item-link">
                         <img src="./img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
@@ -219,8 +224,8 @@
                 </li>
             </ul>
         </div>
-        <div class="footer__bottom">
-            <ul class="footer__bottom-list">
+        <div class="footer__bottom container">
+            <ul class="footer__bottom-list undotted">
                 <li class="footer__bottom-list-item">
                     Company Rating 
                     <input type="radio" name="rating" value="1" checked class="footer__bottom-list-item-star">
@@ -230,9 +235,39 @@
                     <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
                 </li>
                 <li class="footer__bottom-list-item">Copyright © 2018 Dlk • Design Life Kids</li>
-                <li class="footer__bottom-list-item">Web Design — Direct Line Development</li>
+                <li class="footer__bottom-list-item transparent">Web Design — Direct Line Development</li>
             </ul>
         </div>
     </footer>
+    <div class="modal">
+        <a href="#" class="modal__close">
+            <img src="./img/close.png" alt="close">
+        </a>
+        <form method="post" action="#">
+            <div class="modal__wrapper">
+                <label for="">Name</label>
+                <input type="text">
+            </div>
+            <div class="modal__wrapper-two-input">
+                <div class="modal__wrapper">
+                    <label for="">Phone</label>
+                    <input type="tel">
+                </div>
+                <div class="modal__wrapper">
+                    <label for="">Email</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="modal__message">
+                <p class="modal__message">Message</p>
+                <textarea name="message" id="" cols="80" rows="10"></textarea>
+            </div>
+            <div class="modal__checkbox">
+                <input id="personal" type="checkbox">
+                <label for="personal">By clicking on the button, you consent to the processing of your personal data</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Toys</title>
+</head>
+<body>
+    <header class="header container">
+        <a href="/index.html" class="header__link">
+            <img src="/img/icon/logo.svg" alt="logo" class="header__logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list undotted">
+                <li class="header__list-item">
+                    <a href="./blog.html" class="header__list-item-link">Blog</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./catalog.html" class="header__list-item-link">Catalog</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__list-item-link">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="header__list undotted">
+            <li class="header__list-item">
+                <a href="#" class="header__list-item-link">
+                    <img src="/img/icon/loupe.svg" alt="loupe" class="header__list-item-loupe">
+                </a>
+            </li>
+            <li class="header__list-item">
+                <a href="./contact.html" class="header__list-item-link fatty">Contact Us</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="kids container">
+            <h1 class="kids__title">Toy for kids</h1>
+            <div class="kids__path">
+                <p class="kids__subtitle">Home</p>
+                <p class="kids__subtitle">Catalog</p>
+                <p class="kids__subtitle">Toys</p>
+            </div>
+        </section>
+        <section class="filter container">
+            <div class="filter__cost">
+                <label>
+                    Cost
+                    <input type="range">
+                </label>
+                <span>0</span>
+                <span>500</span>
+            </div>
+            <div class="filter__color">
+                <fieldset>
+                    Color
+                    <label>
+                        Black
+                        <input type="checkbox" checked>
+                    </label>
+                    <label>
+                        Blue
+                        <input type="checkbox">
+                    </label>
+                    <label>
+                        Green
+                        <input type="checkbox">
+                    </label>
+                    <label>
+                        White
+                        <input type="checkbox">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="filter__delivery">
+                <fieldset>
+                    Delivery
+                    <label>
+                        Free shipping
+                        <input type="radio">
+                    </label>
+                    <label>
+                        Fast shipping
+                        <input type="radio" checked>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="filter__amount">
+                <fieldset>
+                    Amount
+                    <label>
+                        0-5
+                        <input type="radio" checked>
+                    </label>
+                    <label>
+                        10-20
+                        <input type="radio">
+                    </label>
+                    <label>
+                        20-50
+                        <input type="radio">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="filter__apply">
+                <button class="filter__apply-btn">Apply</button>
+            </div>
+        </section>
+        <section class="toys container">
+            <div class="toys__catalog">
+                <ul class="toys__catalog-list undotted">
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385">
+                        <p class="toys__catalog-list-desc">SHARKY BEAN BAG CHAIR COVER</p>
+                        <p class="toys__catalog-list-price">$60.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/frames.jpg" alt="frames" width="380" height="385">
+                        <p class="toys__catalog-list-desc">BRASS DECO FRAMES</p>
+                        <p class="toys__catalog-list-price">$66.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/apron.jpg" alt="apron" width="380" height="385">
+                        <p class="toys__catalog-list-desc">CIBO FULL APRON</p>
+                        <p class="toys__catalog-list-price">$60.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/machine.jpg" alt="machine" width="380" height="385">
+                        <p class="toys__catalog-list-desc">GATCHA GATCHA GUMBALL MACHINE</p>
+                        <p class="toys__catalog-list-price">$56.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/candle.jpg" alt="candle" width="380" height="385">
+                        <p class="toys__catalog-list-desc">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="toys__catalog-list-price">$29.00 USD</p>
+                    </li>
+                    <li class="toys__catalog-list-item">
+                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385">
+                        <p class="toys__catalog-list-desc">TANGLE SPINNING TEA LIGHT</p>
+                        <p class="toys__catalog-list-price">$56.00 USD</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="toys__pages">
+                <button class="toys__pages-btn">
+                    <img src="/img/icon/btn_left.svg" alt="left">
+                </button>
+                <button class="toys__pages-num">1</button>
+                <button class="toys__pages-num">2</button>
+                <button class="toys__pages-num">3</button>
+                <button class="toys__pages-num">4</button>
+                <button class="toys__pages-btn">
+                    <img src="/img/icon/btn_right.svg" alt="right">
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__navigation container">
+            <p class="footer__navigation-title">Navigation</p>
+            <nav class="footer__navigation-nav">
+                <ul class="footer__navigation-nav-list undotted">
+                    <li class="footer__navigation-nav-list-item">
+                        <a href="#" class="footer__navigation-nav-list-item-link">About Us</a>
+                    </li>
+                    <li class="footer__navigation-nav-list-item">
+                        <a href="#" class="footer__navigation-nav-list-item-link">Blog</a>
+                    </li>
+                    <li class="footer__navigation-nav-list-item">
+                        <a href="#" class="footer__navigation-nav-list-item-link">Design Services</a>
+                    </li>
+                    <li class="footer__navigation-nav-list-item">
+                        <a href="#" class="footer__navigation-nav-list-item-link">Featured On</a>
+                    </li>
+                    <li class="footer__navigation-nav-list-item">
+                        <a href="#" class="footer__navigation-nav-list-item-link">2018 Holiday Catalog</a>
+                    </li>
+                    <li class="footer__navigation-nav-list-item">
+                        <a href="#" class="footer__navigation-nav-list-item-link">Shop By Designer</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer_information container">
+            <p class="footer_information-title">Customer Information</p>
+            <nav class="footer_information-nav"> 
+                <ul class="footer_information-nav-list undotted">
+                    <li class="footer_information-nav-list-item">
+                        <a href="#" class="footer_information-nav-list-item-link">Contact Us</a>
+                    </li>
+                    <li class="footer_information-nav-list-item">
+                        <a href="#" class="footer_information-nav-list-item-link">Sale Exclusions</a>
+                    </li>
+                    <li class="footer_information-nav-list-item">
+                        <a href="#" class="footer_information-nav-list-item-link">Shipping & Returns</a>
+                    </li>
+                    <li class="footer_information-nav-list-item">
+                        <a href="#" class="footer_information-nav-list-item-link">Terms & Conditions</a>
+                    </li>
+                    <li class="footer_information-nav-list-item">
+                        <a href="#" class="footer_information-nav-list-item-link">Privacy Policy</a>
+                    </li>
+                    <li class="footer_information-nav-list-item">
+                        <a href="#" class="footer_information-nav-list-item-link">Search</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__connect container">
+            <p class="footer__connect-title">Connect</p>
+            <input type="text" name="text" placeholder="Email" class="footer__connect-input">
+            <button class="footer__connect-button">Join</button>
+            <ul class="footer__connect-list undotted">
+                <li class="footer__connect-list-item">
+                    <a href="#" class="footer__connect-list-item-link">
+                        <img src="/img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__connect-list-item-link">
+                        <img src="/img/icon/twitter.svg" alt="twitter" class="footer__connect-list-item-link-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__connect-list-item-link">
+                        <img src="/img/icon/pinterest.svg" alt="pinterest" class="footer__connect-list-item-link-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__connect-list-item-link">
+                        <img src="/img/icon/instagram.svg" alt="instagram" class="footer__connect-list-item-link-img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__bottom container">
+            <ul class="footer__bottom-list undotted">
+                <li class="footer__bottom-list-item">
+                    Company Rating 
+                    <input type="radio" name="rating" value="1" checked class="footer__bottom-list-item-star">
+                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
+                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
+                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
+                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
+                </li>
+                <li class="footer__bottom-list-item">Copyright © 2018 Dlk • Design Life Kids</li>
+                <li class="footer__bottom-list-item transparent">Web Design — Direct Line Development</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
