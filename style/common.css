@@ -32,22 +32,65 @@ img {
 
 /* стилизация header */
 
+.header {
+    margin-top: 50px;
+    margin-bottom: 129px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 60px;
+}
+
+.right {
+    margin-right: auto;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__list-item {
+    display: flex;
+    align-items: center;
+}
+
 .header__list-link {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
+    color: #1E0606;
+    margin-right: 20px;
+}
+
+.header__list-loupe {
+    margin-right: 3px;
 }
 
 .fatty {
+    margin-right: 0;
     font-weight: 700;
+    color: #1E0606;
 }
 
 /* стилизация footer */
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #434343;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__navigation, .footer_information {
+    margin-right: 20px;
 }
 
 .footer__navigation-title, .footer_information-title, .footer__connect-title {
@@ -58,6 +101,20 @@ img {
     color: #AAAAAA;
 }
 
+.border {
+    border-bottom: 1px solid #666666;
+    padding-bottom: 23px;
+    margin-bottom: 28px;
+    width: 380px;
+}
+
+.footer__connect-border {
+    border-bottom: 1px solid #666666;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+    width: 380px;
+}
+
 .footer__navigation-nav-list-item-link, .footer_information-nav-list-item-link, .footer__bottom-list-item {
     font-family: 'Open Sans';
     font-weight: 400;
@@ -66,8 +123,17 @@ img {
     color: #FFFFFF;
 }
 
+.footer__navigation-nav-list-item, .footer_information-nav-list-item {
+   margin-bottom: 15px;
+}
+
 .transparent {
     color: #A2A2A2;
+}
+
+.footer__connect-email {
+    display: flex;
+    margin-bottom: 25px;
 }
 
 .footer__connect-input::placeholder {
@@ -79,10 +145,11 @@ img {
 }
 
 .footer__connect-input {
-    width: 299px;
+    width: 284px;
     height: 40px;
     border: 0;
     background-color: #666666;
+    padding-left: 15px;
 }
 
 .footer__connect-button {
@@ -95,4 +162,37 @@ img {
     text-transform: uppercase;
     border: 0;
     color: #FFFFFF;
+}
+
+.footer__connect-list {
+    display: flex;
+}
+
+.footer__connect-list-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #666666;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__bottom {
+    border-top: 1px solid #666666;
+    padding-top: 23px;
+    margin-top: 13px;
+}
+
+.footer__bottom-list {
+    display: flex;
+}
+
+.footer__bottom-rating {
+    margin-right: 190px;
+}
+
+.footer__bottom-copyright {
+    margin-right: 109px;
 }
