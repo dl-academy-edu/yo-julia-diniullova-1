@@ -232,6 +232,11 @@ img {
     display: flex;
 }
 
+.footer__bottom-list-rating:hover,
+.footer__bottom-list-rating:active {
+    color: #C29974;
+}
+
 .footer__bottom-rating-area {
 	overflow: hidden;
 	width: 100px;
@@ -274,3 +279,4 @@ img {
 .footer__bottom-copyright {
     margin-right: 109px;
 }
+

@@ -1,0 +1,111 @@
+.collection {
+    background: #EEE4DB;
+    background-image: url(/img/monster.png);
+    background-repeat: no-repeat;
+    background-position: right top -89px;
+    margin-bottom: 90px;
+}
+
+.collection__wrapper {
+    display: flex;
+}
+
+.collection__switch {
+    margin-top: 17px;
+    margin-left: 28px;
+    margin-right: 44px;
+}
+
+.collection__switch-num {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 73px;
+    color: rgba(30, 6, 6, 0.05);
+}
+
+.collection__switch-list-item {
+    width: 31px;
+    height: 3px;
+    margin-bottom: 11px;
+}
+
+.collection__switch-list-item-button {
+    width: 31px;
+    height: 3px;
+    border: 0;
+    background: #D6CAC2;
+    cursor: pointer;
+}
+
+.collection__switch-list-item-button:hover {
+    background: #725F5B;
+}
+
+.collection__text {
+    margin-top: 89px;
+    margin-bottom: 89px;
+}
+
+.collection__text-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    color: #1E0606;
+    width: 307px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.collection__text-subtitle {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    margin-bottom: 20px;
+}
+
+.collection__text-button {
+    width: 161px;
+    height: 40px;
+    background: #000000;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+.collection__basement {
+    display: flex;
+    background: #C29974;
+    text-align: center;
+    height: 39px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collection__sub-subtitle {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.category__products-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 20px;
+}
