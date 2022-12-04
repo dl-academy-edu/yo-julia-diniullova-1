@@ -77,6 +77,16 @@ img {
     color: #1E0606;
 }
 
+.header__logo:hover, .header__list-link:hover,
+.header__list-loupe:hover {
+    opacity: 0.5;
+}
+
+.header__logo:active, .header__list-link:active,
+.header__list-loupe:active {
+    opacity: 0.7;
+}
+
 /* стилизация footer */
 
 .footer {
@@ -93,7 +103,9 @@ img {
     margin-right: 20px;
 }
 
-.footer__navigation-title, .footer_information-title, .footer__connect-title {
+.footer__navigation-title, 
+.footer_information-title, 
+.footer__connect-title {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 16px;
@@ -115,20 +127,33 @@ img {
     width: 380px;
 }
 
-.footer__navigation-nav-list-item-link, .footer_information-nav-list-item-link, .footer__bottom-list-item {
+.footer__navigation-nav-list-item-link, 
+.footer_information-nav-list-item-link, 
+.footer__bottom-list-item {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
-.footer__navigation-nav-list-item, .footer_information-nav-list-item {
+.footer__navigation-nav-list-item-link:hover,
+.footer_information-nav-list-item-link:hover {
+    opacity: 0.5;
+}
+
+.footer__navigation-nav-list-item, 
+.footer_information-nav-list-item {
    margin-bottom: 15px;
 }
 
 .transparent {
     color: #A2A2A2;
+}
+
+.transparent:hover {
+    color: #FFFFFF;
 }
 
 .footer__connect-email {
@@ -150,6 +175,7 @@ img {
     border: 0;
     background-color: #666666;
     padding-left: 15px;
+    cursor: pointer;
 }
 
 .footer__connect-button {
@@ -162,6 +188,7 @@ img {
     text-transform: uppercase;
     border: 0;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .footer__connect-list {
@@ -177,6 +204,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.footer__connect-list-item:hover {
+    opacity: 0.5;
 }
 
 .footer__bottom {
@@ -190,7 +222,53 @@ img {
 }
 
 .footer__bottom-rating {
-    margin-right: 190px;
+    margin-right: 150px;
+}
+
+.footer__bottom-list-rating {
+    margin: 0;
+    padding: 0;
+    border: none;  
+    display: flex;
+}
+
+.footer__bottom-rating-area {
+	overflow: hidden;
+	width: 100px;
+    height: 17px;
+    margin-left: 28px;
+}
+
+.footer__bottom-rating-area:not(:checked) > input {
+	display: none;
+}
+
+.footer__bottom-rating-area:not(:checked) > label {
+	float: right;
+	width: 17px;
+    margin-right: 3px;
+	cursor: pointer;
+}
+
+.footer__bottom-rating-area:not(:checked) > label:before {
+	content: url(/img/icon/star.svg);
+}
+
+.footer__bottom-rating-area > input:checked ~ label {
+	content: url(/img/icon/cleek_star.svg);
+}
+
+.footer__bottom-rating-area:not(:checked) > label:hover,
+.footer__bottom-rating-area:not(:checked) > label:hover ~ label {
+	content: url(/img/icon/guidance_star.svg);
+}
+
+.footer__bottom-rating-area > input:checked + label:hover,
+.footer__bottom-rating-area > input:checked + label:hover ~ label,
+.footer__bottom-rating-area > input:checked ~ label:hover,
+.footer__bottom-rating-area > input:checked ~ label:hover ~ label,
+.footer__bottom-rating-area > label:hover ~ input:checked ~ label {
+	content: url(/img/icon/guidance_star.svg);
 }
 
 .footer__bottom-copyright {

@@ -178,12 +178,21 @@
         <div class="footer__bottom container">
             <ul class="footer__bottom-list undotted">
                 <li class="footer__bottom-list-item footer__bottom-rating">
-                    Company Rating 
-                    <input type="radio" name="rating" value="1" checked class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
+                    <fieldset class="footer__bottom-list-rating">
+                        Company Rating
+                        <div class="footer__bottom-rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="grade «5»"></label>	
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="grade «4»"></label>    
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="grade «3»"></label>  
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="grade «2»"></label>    
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="grade «1»"></label>
+                        </div>
+                    </fieldset>
                 </li>
                 <li class="footer__bottom-list-item footer__bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</li>
                 <li class="footer__bottom-list-item transparent">Web Design — Direct Line Development</li>
