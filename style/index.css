@@ -86,6 +86,14 @@
     cursor: pointer;
 }
 
+.collection__text-button:hover {
+    background: #C29974;
+}
+
+.collection__text-button:active{
+    background: #CFAF91;
+}
+
 .collection__basement {
     display: flex;
     background: #C29974;
@@ -167,6 +175,11 @@
     top: 103px;
 }
 
+.category__products-list-item-text:hover,
+.category__products-list-item-text:active{
+    text-decoration: underline;
+}
+
 .text-apparel {
     left: 75px;
     width: 129px;
@@ -202,6 +215,14 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+}
+
+.category__switch-left-arrow:hover, 
+.category__switch-right-arrow:hover,
+.category__switch-left-arrow:active, 
+.category__switch-right-arrow:active {
+    background: #D5D4E1;
 }
 
 .category__switch-left-arrow {
@@ -237,7 +258,7 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     margin-top: 30px;
 }
 
@@ -295,8 +316,16 @@
     cursor: pointer;
 }
 
+.delivery__text-link:hover {
+    background: #C29974;
+}
+
+.delivery__text-link:active{
+    background: #CFAF91;
+}
+
 .awards {
-    margin-bottom: 90px;
+    margin-bottom: 114px;
 }
 
 .awards__list {
@@ -306,6 +335,11 @@
 
 .awards__list-item {
     margin-right: auto;
+    cursor: pointer;
+}
+
+.awards__list-item:hover {
+    opacity: 0.5;
 }
 
 .awards__list-item:nth-child(4) {
@@ -314,10 +348,18 @@
 
 .wrapper {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 155px;
+}
+
+.design {
+    width: 543px;
+    height: 228px;
+    background: #E1F0F7;
+    margin-right: 57px;
 }
 
 .design__wrapper {
+    position: relative;
     margin-left: 30px;
 }
 
@@ -328,7 +370,8 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin-bottom: 10px;
+    margin-top: -215px;
+    position: absolute;
 }
 
 .design__subtitle {
@@ -339,6 +382,7 @@
     line-height: 34px;
     color: #1E0606;
     margin-bottom: 10px;
+    margin-top: 31px;
 }
 
 .design__description {
@@ -363,18 +407,34 @@
     cursor: pointer;
 }
 
+.design__link:hover {
+    background: #C29974;
+}
+
+.design__link:active {
+    background: #CFAF91;
+}
+
+.contacts {
+    width: 543px;
+    height: 209px;
+    background: #E1F0F7;
+}
+
 .contacts__wrapper {
+    position: relative;
     margin-left: 30px;
 }
 
 .contacts__title {
+    position: absolute;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin-bottom: 20px;
+    margin-top: -363px;
 }
 
 .contacts__subtitle {
@@ -385,4 +445,9 @@
     color: #1E0606;
     margin-bottom: 30px;
     width: 483px;
+    margin-top: 42px;
+}
+
+.modal {
+    display: none;
 }

@@ -178,6 +178,14 @@ img {
     cursor: pointer;
 }
 
+.footer__connect-input:hover,
+.footer__connect-input:active {
+    width: 283px;
+    height: 38px;
+    border: 1px solid #FFFDFD;
+    border-right: none;
+}
+
 .footer__connect-button {
     padding: 9px 22px;
     background: #000000;
@@ -189,6 +197,14 @@ img {
     border: 0;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.footer__connect-button:hover {
+    background: #C29974;
+}
+
+.footer__connect-button:active {
+    background: #CFAF91;
 }
 
 .footer__connect-list {
