@@ -73,7 +73,7 @@
 }
 
 .collection__text-button {
-    width: 161px;
+    width: max-content;
     height: 40px;
     background: #000000;
     font-family: 'Open Sans';
@@ -84,6 +84,7 @@
     color: #FFFFFF;
     border: 0;
     cursor: pointer;
+    padding: 9px 22px;
 }
 
 .collection__text-button:hover {
@@ -222,15 +223,21 @@
 .category__switch-right-arrow:hover,
 .category__switch-left-arrow:active, 
 .category__switch-right-arrow:active {
-    background: #D5D4E1;
+    opacity: 0.5;
 }
 
 .category__switch-left-arrow {
     margin-right: 6px;
+    background-image: url(/img/icon/left_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .category__switch-right-arrow {
     margin-right: 20px;
+    background-image: url(/img/icon/right_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .category__switch-subtitle {
@@ -353,13 +360,12 @@
 
 .design {
     width: 543px;
-    height: 228px;
+    min-height: 228px;
     background: #E1F0F7;
     margin-right: 57px;
 }
 
 .design__wrapper {
-    position: relative;
     margin-left: 30px;
 }
 
@@ -370,8 +376,7 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin-top: -215px;
-    position: absolute;
+    margin-top: -26px;
 }
 
 .design__subtitle {
@@ -382,7 +387,7 @@
     line-height: 34px;
     color: #1E0606;
     margin-bottom: 10px;
-    margin-top: 31px;
+    margin-top: 10px;
 }
 
 .design__description {
@@ -422,19 +427,17 @@
 }
 
 .contacts__wrapper {
-    position: relative;
     margin-left: 30px;
 }
 
 .contacts__title {
-    position: absolute;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 38px;
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin-top: -363px;
+    margin-top: -26px;
 }
 
 .contacts__subtitle {
@@ -445,7 +448,7 @@
     color: #1E0606;
     margin-bottom: 30px;
     width: 483px;
-    margin-top: 42px;
+    margin-top: 20px;
 }
 
 .modal {
