@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/toys.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Toys</title>
 </head>
 <body>
@@ -44,121 +45,107 @@
         <section class="kids container">
             <h1 class="kids__title">Toy for kids</h1>
             <div class="kids__path">
-                <p class="kids__subtitle">Home</p>
-                <p class="kids__subtitle">Catalog</p>
-                <p class="kids__subtitle">Toys</p>
+                <p class="kids__subtitle kids__vector-home">Home</p>
+                <p class="kids__subtitle kids__vector-catalog">Catalog</p>
+                <p class="kids__subtitle kids__active">Toys</p>
             </div>
         </section>
-        <section class="filter container">
-            <div class="filter__cost">
-                <label>
-                    Cost
-                    <input type="range">
-                </label>
-                <span>0</span>
-                <span>500</span>
-            </div>
-            <div class="filter__color">
-                <fieldset>
-                    Color
-                    <label>
-                        Black
-                        <input type="checkbox" checked>
-                    </label>
-                    <label>
-                        Blue
-                        <input type="checkbox">
-                    </label>
-                    <label>
-                        Green
-                        <input type="checkbox">
-                    </label>
-                    <label>
-                        White
-                        <input type="checkbox">
-                    </label>
-                </fieldset>
-            </div>
-            <div class="filter__delivery">
-                <fieldset>
-                    Delivery
-                    <label>
-                        Free shipping
-                        <input type="radio">
-                    </label>
-                    <label>
-                        Fast shipping
-                        <input type="radio" checked>
-                    </label>
-                </fieldset>
-            </div>
-            <div class="filter__amount">
-                <fieldset>
-                    Amount
-                    <label>
-                        0-5
-                        <input type="radio" checked>
-                    </label>
-                    <label>
-                        10-20
-                        <input type="radio">
-                    </label>
-                    <label>
-                        20-50
-                        <input type="radio">
-                    </label>
-                </fieldset>
-            </div>
-            <div class="filter__apply">
-                <button class="filter__apply-btn">Apply</button>
+        <section class="filter">
+            <div class="filter__wrapper container">
+                <div class="filter__cost">
+                    <label class="filter__cost-label">Cost</label>
+                    <div class="filtet__cost-wrapper">
+                        <input type="range" min="0" max="500" value="100" class="filter__cost-input">
+                    </div>
+                    <div class="filter__cost-numbers">
+                        <span class="filter__cost-num">0</span>
+                        <span class="filter__cost-num">500</span>
+                    </div>
+                </div>
+                <div class="filter__color">
+                    <fieldset class="filter__color-fieldset">
+                        Color
+                            <input type="checkbox" id="black" checked class="filter__color-input">
+                            <label for="black" class="filter__color-label">Black</label>
+                            <input type="checkbox" id="blue" class="filter__color-input">
+                            <label for="blue" class="filter__color-label">Blue</label>
+                            <input type="checkbox" id="green" class="filter__color-input">
+                            <label for="green" class="filter__color-label">Green</label>
+                            <input type="checkbox" id="white" class="filter__color-input">
+                            <label for="white" class="filter__color-label">White</label>
+                    </fieldset>
+                </div>
+                <div class="filter__delivery">
+                    <fieldset class="filter__delivery-fieldset">
+                        Delivery
+                        <input type="radio" id="free-shipping" class="filter__delivery-input">
+                        <label for="free-shipping" class="filter__delivery-label">Free shipping</label>
+                        <input type="radio" id="fast-shipping" checked class="filter__delivery-input">
+                        <label for="fast-shipping" class="filter__delivery-label">Fast shipping</label>
+                    </fieldset>
+                </div>
+                <div class="filter__amount">
+                    <fieldset class="filter__amount-fieldset">
+                        Amount
+                        <div class="filter__amount-wrapper">
+                            <input type="radio" checked class="filter__amount-input">
+                            <label class="filter__amount-label">0-5</label>
+                            <input type="radio" class="filter__amount-input">
+                            <label class="filter__amount-label">10-20</label>
+                            <input type="radio" class="filter__amount-input">
+                            <label class="filter__amount-label">20-50</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="filter__apply">
+                    <button class="filter__apply-btn">Apply</button>
+                </div>
             </div>
         </section>
         <section class="toys container">
             <div class="toys__catalog">
                 <ul class="toys__catalog-list undotted">
                     <li class="toys__catalog-list-item">
-                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385">
+                        <img src="/img/pillow.jpg" alt="pillow" width="380" height="385" class="toys__catalog-list-img">
                         <p class="toys__catalog-list-desc">SHARKY BEAN BAG CHAIR COVER</p>
                         <p class="toys__catalog-list-price">$60.00 USD</p>
                     </li>
                     <li class="toys__catalog-list-item">
-                        <img src="/img/frames.jpg" alt="frames" width="380" height="385">
+                        <img src="/img/frames.jpg" alt="frames" width="380" height="385" class="toys__catalog-list-img">
                         <p class="toys__catalog-list-desc">BRASS DECO FRAMES</p>
                         <p class="toys__catalog-list-price">$66.00 USD</p>
                     </li>
                     <li class="toys__catalog-list-item">
-                        <img src="/img/apron.jpg" alt="apron" width="380" height="385">
+                        <img src="/img/apron.jpg" alt="apron" width="380" height="385" class="toys__catalog-list-img">
                         <p class="toys__catalog-list-desc">CIBO FULL APRON</p>
                         <p class="toys__catalog-list-price">$60.00 USD</p>
                     </li>
                     <li class="toys__catalog-list-item">
-                        <img src="/img/machine.jpg" alt="machine" width="380" height="385">
+                        <img src="/img/machine.jpg" alt="machine" width="380" height="385" class="toys__catalog-list-img">
                         <p class="toys__catalog-list-desc">GATCHA GATCHA GUMBALL MACHINE</p>
                         <p class="toys__catalog-list-price">$56.00 USD</p>
                     </li>
                     <li class="toys__catalog-list-item">
-                        <img src="/img/candle.jpg" alt="candle" width="380" height="385">
+                        <img src="/img/candle.jpg" alt="candle" width="380" height="385" class="toys__catalog-list-img">
                         <p class="toys__catalog-list-desc">CHRISTMAS ADVENT SCENTED CANDLE</p>
                         <p class="toys__catalog-list-price">$29.00 USD</p>
                     </li>
                     <li class="toys__catalog-list-item">
-                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385">
+                        <img src="/img/lamp.jpg" alt="lamp" width="380" height="385" class="toys__catalog-list-img">
                         <p class="toys__catalog-list-desc">TANGLE SPINNING TEA LIGHT</p>
                         <p class="toys__catalog-list-price">$56.00 USD</p>
                     </li>
                 </ul>
             </div>
             <div class="toys__pages">
-                <button class="toys__pages-btn">
-                    <img src="/img/icon/btn_left.svg" alt="left">
-                </button>
-                <button class="toys__pages-num">1</button>
-                <button class="toys__pages-num">2</button>
-                <button class="toys__pages-num">3</button>
-                <button class="toys__pages-num">4</button>
-                <button class="toys__pages-btn">
-                    <img src="/img/icon/btn_right.svg" alt="right">
-                </button>
+                <button class="toys__pages-btn-left"></button>
+                <div class="toys__pages-numbers">
+                    <button class="toys__pages-num num-active">1</button>
+                    <button class="toys__pages-num">2</button>
+                    <button class="toys__pages-num">3</button>
+                    <button class="toys__pages-num">4</button>
+                </div>
+                <button class="toys__pages-btn-right"></button>
             </div>
         </section>
     </main>
