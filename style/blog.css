@@ -2,13 +2,6 @@
     margin-top: 60px;
 }
 
-.blog__path {
-    display: flex;
-    gap: 40px;
-    position: relative;
-    margin-bottom: 50px;
-}
-
 .blog__title {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -16,6 +9,14 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+    margin-bottom: 15px;
+}
+
+.blog__path {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .blog__subtitle {
@@ -25,6 +26,7 @@
     font-size: 20px;
     line-height: 26px;
     color: #1E0606;
+    cursor: pointer;
 }
 
 .blog__vector::after {
@@ -37,9 +39,8 @@
     opacity: 0.5;
 }
 
-
 .blog__catalog {
-    margin-bottom: 36px;
+    margin-bottom: 45px;
 }
 
 .blog__catalog-list {
@@ -55,6 +56,7 @@
 
 .blog__catalog-img {
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .blog__catalog-date {
@@ -73,6 +75,12 @@
     line-height: 31px;
     color: #1E0606;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.blog__catalog-title:hover, 
+.blog__catalog-title:active {
+    text-decoration-line: underline;
 }
 
 .blog__catalog-subtitle {
@@ -90,19 +98,40 @@
 }
 
 .blog__pages-btn-left {
-    background-image: url(/img/icon/left_arrow.svg);
+    background-image: url(/img/icon/arrow_inaction.svg);
     border: 0;
-    width: 13px;
-    height: 26px;
+    width: 18px;
+    height: 30px;
     background-color: transparent;
+    cursor: pointer;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+}
+
+.blog__pages-btn-left:hover {
+    background-image: url(/img/icon/arrow_hover.svg);
+}
+
+.blog__pages-btn-left:active {
+    background-image: url(/img/icon/arrow_active.svg);
 }
 
 .blog__pages-btn-right {
-    background-image: url(/img/icon/right_arrow.svg);
+    background-image: url(/img/icon/arrow_inaction.svg);
     border: 0;
-    width: 13px;
-    height: 26px;
+    width: 18px;
+    height: 30px;
     background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.blog__pages-btn-right:hover {
+    background-image: url(/img/icon/arrow_hover.svg);
+}
+
+.blog__pages-btn-right:active {
+    background-image: url(/img/icon/arrow_active.svg);
 }
 
 .blog__pages-numbers {
@@ -119,4 +148,17 @@
     text-transform: uppercase;
     color: #1E0606;
     background: none;
+    cursor: pointer;
+}
+
+.blog__pages-num:hover {
+    color: #AAAAAA;
+}
+
+.blog__pages-num:active {
+    color: #C29974;
+}
+
+.num-active {
+    color: #C29974;
 }
