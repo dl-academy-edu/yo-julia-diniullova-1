@@ -27,6 +27,7 @@
     font-size: 20px;
     line-height: 26px;
     color: #1E0606;
+    cursor: pointer;
 }
 
 .category__active {
@@ -51,6 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .category__products-list-item-text {
@@ -63,6 +65,11 @@
     color: #FFFFFF;
     position: absolute;
     top: 103px;
+}
+
+.category__products-list-item-text:hover, 
+.category__products-list-item-text:active {
+    text-decoration-line: underline;
 }
 
 .text-apparel {
