@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <body>
@@ -44,42 +45,41 @@
         <section class="contact container">
             <h1 class="contact__title">Contact  Us</h1>
             <div class="contact__path">
-                <p>Home</p>
-                <img src="/img/icon/arrow.svg" alt="arrow">
-                <p>Contact Us</p>
+                <p class="contact__subtitle contact__vector">Home</p>
+                <p class="contact__subtitle contact__active">Contact Us</p>
             </div>
             <div class="contact__main">
-                <div class="contact__form">
-                    <form method="post" action="#">
-                        <div class="modal__wrapper">
-                            <label for="">Name</label>
-                            <input type="text">
+                <div class="contact__main-wrapper">
+                    <form method="post" action="#" class="contact__main-form">
+                        <div class="input__wrapper">
+                            <label for="name" class="contact__main-label">Name</label>
+                            <input type="text" id="name" placeholder="Ivan Ivanov" class="contact__main-input">
                         </div>
-                        <div class="modal__wrapper-two-input">
-                            <div class="modal__wrapper">
-                                <label for="">Phone</label>
-                                <input type="tel">
+                        <div class="wrapper-two-input">
+                            <div class="input__wrapper">
+                                <label for="phone" class="contact__main-label">Phone</label>
+                                <input type="tel" id="phone" class="contact__main-input">
                             </div>
-                            <div class="modal__wrapper">
-                                <label for="">Email</label>
-                                <input type="email">
+                            <div class="input__wrapper">
+                                <label for="email" class="contact__main-label">Email</label>
+                                <input type="email" id="email" class="contact__main-input">
                             </div>
                         </div>
-                        <div class="modal__message">
-                            <p class="modal__message">Message</p>
-                            <textarea name="message" id="" cols="80" rows="10"></textarea>
+                        <div class="contact__main-message">
+                            <p class="contact__main-label">Message</p>
+                            <textarea name="message" id="" cols="80" rows="10" class="contact__main-textarea"></textarea>
                         </div>
-                        <div class="modal__checkbox">
-                            <input id="personal" type="checkbox">
-                            <label for="personal">By clicking on the button, you consent to the processing of your personal data</label>
+                        <div class="contact__main-personal">
+                            <input id="personal" type="checkbox" class="contact__main-checkbox" checked>
+                            <label for="personal" class="contact__main-label">By clicking on the button, you consent to the processing of your personal data</label>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="contact__main-submit">Submit</button>
                     </form>
                 </div>
                 <div class="contact__text">
-                    <p class="contact__subtitle">Our support team are on-hand to assist with any issues you are experiencing.</p>
-                    <p class="contact__subtitle">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-                    <p class="contact__subtitle">An expert is waiting to help you!</p>
+                    <p class="contact__text-subtitle">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                    <p class="contact__text-subtitle">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                    <p class="contact__text-caps">An expert is waiting to help you!</p>
                 </div>
             </div>
         </section>
