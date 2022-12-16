@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/common.css">
     <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -264,31 +265,35 @@
         <a href="#" class="modal__close">
             <img src="./img/close.png" alt="close">
         </a>
-        <form method="post" action="#">
-            <div class="modal__wrapper">
-                <label for="">Name</label>
-                <input type="text">
+        <div class="contact__main">
+            <div class="contact__main-wrapper">
+                <form method="post" action="#" class="contact__main-form">
+                    <div class="input__wrapper">
+                        <label for="name" class="contact__main-label">Name</label>
+                        <input type="text" id="name" placeholder="Ivan Ivanov" class="contact__main-input">
+                    </div>
+                    <div class="wrapper-two-input">
+                        <div class="input__wrapper">
+                            <label for="phone" class="contact__main-label">Phone</label>
+                            <input type="tel" id="phone" class="contact__main-input">
+                        </div>
+                        <div class="input__wrapper">
+                            <label for="email" class="contact__main-label">Email</label>
+                            <input type="email" id="email" class="contact__main-input">
+                        </div>
+                    </div>
+                    <div class="contact__main-message">
+                        <p class="contact__main-label">Message</p>
+                        <textarea name="message" id="" cols="80" rows="10" class="contact__main-textarea"></textarea>
+                    </div>
+                    <div class="contact__main-personal">
+                        <input id="personal" type="checkbox" class="contact__main-checkbox" checked>
+                        <label for="personal" class="contact__main-label">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <button type="submit" class="contact__main-submit">Submit</button>
+                </form>
             </div>
-            <div class="modal__wrapper-two-input">
-                <div class="modal__wrapper">
-                    <label for="">Phone</label>
-                    <input type="tel">
-                </div>
-                <div class="modal__wrapper">
-                    <label for="">Email</label>
-                    <input type="email">
-                </div>
-            </div>
-            <div class="modal__message">
-                <p class="modal__message">Message</p>
-                <textarea name="message" id="" cols="80" rows="10"></textarea>
-            </div>
-            <div class="modal__checkbox">
-                <input id="personal" type="checkbox">
-                <label for="personal">By clicking on the button, you consent to the processing of your personal data</label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        </div>
     </div>
 </body>
 </html>
