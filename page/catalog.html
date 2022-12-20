@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/catalog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Catalog</title>
 </head>
 <body>
@@ -16,27 +17,27 @@
         <a href="/index.html" class="header__link">
             <img src="/img/icon/logo.svg" alt="logo" class="header__logo">
         </a>
-        <nav class="header__nav">
+        <nav class="header__nav right">
             <ul class="header__list undotted">
                 <li class="header__list-item">
-                    <a href="./blog.html" class="header__list-item-link">Blog</a>
+                    <a href="./blog.html" class="header__list-link">Blog</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="/" class="header__list-item-link">Catalog</a>
+                    <a href="/" class="header__list-link">Catalog</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__list-item-link">About Us</a>
+                    <a href="#" class="header__list-link">About Us</a>
                 </li>
             </ul>
         </nav>
         <ul class="header__list undotted">
             <li class="header__list-item">
-                <a href="#" class="header__list-item-link">
-                    <img src="/img/icon/loupe.svg" alt="loupe" class="header__list-item-loupe">
+                <a href="#" class="header__list-link">
+                    <img src="/img/icon/loupe.svg" alt="loupe" class="header__list-loupe">
                 </a>
             </li>
             <li class="header__list-item">
-                <a href="./contact.html" class="header__list-item-link fatty">Contact Us</a>
+                <a href="./contact.html" class="header__list-link fatty">Contact Us</a>
             </li>
         </ul>
     </header>
@@ -44,44 +45,44 @@
         <section class="category container">
             <h1 class="category__title">Category Products</h1>
             <div class="category__path">
-                <p class="category__subtitle">Home</p>
-                <p class="category__subtitle">Catalog</p>
+                <p class="category__subtitle category__vector">Home</p>
+                <p class="category__subtitle category__active">Catalog</p>
             </div>
             <ul class="category__products-list undotted">
                 <li class="category__products-list-item">
                     <a href="#" class="category__products-list-item-link">
-                        <img src="/img/apparel_kids.png" alt="apparel kids" width="244" height="177" class="category__products-list-item-img">
-                        <p class="category__products-list-item-text">APPAREL KIDS</p>
+                        <p class="category__products-list-item-text text-apparel">APPAREL KIDS</p>
+                        <img src="/img/apparel_kids.png" alt="apparel kids" width="280" height="270" class="category__products-list-item-img">
                     </a>
                 </li>
                 <li class="category__products-list-item">
                     <a href="#" class="category__products-list-item-link">
-                        <img src="/img/holiday_shop.png" alt="holiday shop" width="208" height="244" class="category__products-list-item-img">
-                        <p class="category__products-list-item-text">HOLIDAY SHOP</p>
+                        <p class="category__products-list-item-text text-holiday">HOLIDAY SHOP</p>
+                        <img src="/img/holiday_shop.png" alt="holiday shop" width="280" height="270" class="category__products-list-item-img">
                     </a>
                 </li>
                 <li class="category__products-list-item">
                     <a href="#" class="category__products-list-item-link">
-                        <img src="/img/toys.png" alt="toys" width="270" height="270" class="category__products-list-item-img">
-                        <p class="category__products-list-item-text">TOYS</p>
+                        <a href="/page/toys.html" class="category__products-list-item-text text-toys">TOYS</a>
+                        <img src="/img/toys.png" alt="toys" width="280" height="270" class="category__products-list-item-img">
                     </a>
                 </li>
                 <li class="category__products-list-item">
                     <a href="#" class="category__products-list-item-link">
-                        <img src="/img/accessories.png" alt="accessories" width="240" height="250" class="category__products-list-item-img">
-                        <p class="category__products-list-item-text">ACCESSORIES</p>
+                        <p class="category__products-list-item-text text-accessories">ACCESSORIES</p>
+                        <img src="/img/accessories.png" alt="accessories" width="280" height="270" class="category__products-list-item-img">
                     </a>
                 </li>
                 <li class="category__products-list-item">
                     <a href="#" class="category__products-list-item-link">
-                        <img src="/img/sale.png" alt="sale" width="248" height="248" class="category__products-list-item-img">
-                        <p class="category__products-list-item-text">SALE</p>
+                        <p class="category__products-list-item-text text-sale">SALE</p>
+                        <img src="/img/sale.png" alt="sale" width="280" height="270" class="category__products-list-item-img">
                     </a>
                 </li>
                 <li class="category__products-list-item">
                     <a href="#" class="category__products-list-item-link">
-                        <img src="/img/apparel_adults.png" alt="apparel adults" width="271" height="204" class="category__products-list-item-img">
-                        <p class="category__products-list-item-text">APPAREL ADULTS</p>
+                        <p class="category__products-list-item-text text-adults">APPAREL ADULTS</p>
+                        <img src="/img/apparel_adults.png" alt="apparel adults" width="280" height="270" class="category__products-list-item-img">
                     </a>
                 </li>
             </ul>
@@ -94,94 +95,107 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__navigation container">
-            <p class="footer__navigation-title">Navigation</p>
-            <nav class="footer__navigation-nav">
-                <ul class="footer__navigation-nav-list undotted">
-                    <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item-link">About Us</a>
+        <div class="footer__wrapper container">
+            <div class="footer__navigation">
+                <p class="footer__navigation-title border">Navigation</p>
+                <nav class="footer__navigation-nav">
+                    <ul class="footer__navigation-nav-list undotted">
+                        <li class="footer__navigation-nav-list-item">
+                            <a href="#" class="footer__navigation-nav-list-item-link">About Us</a>
+                        </li>
+                        <li class="footer__navigation-nav-list-item">
+                            <a href="#" class="footer__navigation-nav-list-item-link">Blog</a>
+                        </li>
+                        <li class="footer__navigation-nav-list-item">
+                            <a href="#" class="footer__navigation-nav-list-item-link">Design Services</a>
+                        </li>
+                        <li class="footer__navigation-nav-list-item">
+                            <a href="#" class="footer__navigation-nav-list-item-link">Featured On</a>
+                        </li>
+                        <li class="footer__navigation-nav-list-item">
+                            <a href="#" class="footer__navigation-nav-list-item-link">2018 Holiday Catalog</a>
+                        </li>
+                        <li class="footer__navigation-nav-list-item">
+                            <a href="#" class="footer__navigation-nav-list-item-link">Shop By Designer</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_information">
+                <p class="footer_information-title border">Customer Information</p>
+                <nav class="footer_information-nav"> 
+                    <ul class="footer_information-nav-list undotted">
+                        <li class="footer_information-nav-list-item">
+                            <a href="#" class="footer_information-nav-list-item-link">Contact Us</a>
+                        </li>
+                        <li class="footer_information-nav-list-item">
+                            <a href="#" class="footer_information-nav-list-item-link">Sale Exclusions</a>
+                        </li>
+                        <li class="footer_information-nav-list-item">
+                            <a href="#" class="footer_information-nav-list-item-link">Shipping & Returns</a>
+                        </li>
+                        <li class="footer_information-nav-list-item">
+                            <a href="#" class="footer_information-nav-list-item-link">Terms & Conditions</a>
+                        </li>
+                        <li class="footer_information-nav-list-item">
+                            <a href="#" class="footer_information-nav-list-item-link">Privacy Policy</a>
+                        </li>
+                        <li class="footer_information-nav-list-item">
+                            <a href="#" class="footer_information-nav-list-item-link">Search</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__connect">
+                <p class="footer__connect-title footer__connect-border">Connect</p>
+                <div class="footer__connect-email">
+                    <input type="text" name="text" placeholder="Email" class="footer__connect-input">
+                    <button class="footer__connect-button">Join</button>
+                </div>
+                <ul class="footer__connect-list undotted">
+                    <li class="footer__connect-list-item">
+                        <a href="#" class="footer__connect-list-item-link">
+                            <img src="/img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
+                        </a>
                     </li>
-                    <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item-link">Blog</a>
+                    <li class="footer__connect-list-item"> 
+                        <a href="#" class="footer__connect-list-item-link">
+                            <img src="/img/icon/twitter.svg" alt="twitter" class="footer__connect-list-item-link-img">
+                        </a>
                     </li>
-                    <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item-link">Design Services</a>
+                    <li class="footer__connect-list-item">
+                        <a href="#" class="footer__connect-list-item-link">
+                            <img src="/img/icon/pinterest.svg" alt="pinterest" class="footer__connect-list-item-link-img">
+                        </a>
                     </li>
-                    <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item-link">Featured On</a>
-                    </li>
-                    <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item-link">2018 Holiday Catalog</a>
-                    </li>
-                    <li class="footer__navigation-nav-list-item">
-                        <a href="#" class="footer__navigation-nav-list-item-link">Shop By Designer</a>
+                    <li class="footer__connect-list-item">
+                        <a href="#" class="footer__connect-list-item-link">
+                            <img src="/img/icon/instagram.svg" alt="instagram" class="footer__connect-list-item-link-img">
+                        </a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="footer_information container">
-            <p class="footer_information-title">Customer Information</p>
-            <nav class="footer_information-nav"> 
-                <ul class="footer_information-nav-list undotted">
-                    <li class="footer_information-nav-list-item">
-                        <a href="#" class="footer_information-nav-list-item-link">Contact Us</a>
-                    </li>
-                    <li class="footer_information-nav-list-item">
-                        <a href="#" class="footer_information-nav-list-item-link">Sale Exclusions</a>
-                    </li>
-                    <li class="footer_information-nav-list-item">
-                        <a href="#" class="footer_information-nav-list-item-link">Shipping & Returns</a>
-                    </li>
-                    <li class="footer_information-nav-list-item">
-                        <a href="#" class="footer_information-nav-list-item-link">Terms & Conditions</a>
-                    </li>
-                    <li class="footer_information-nav-list-item">
-                        <a href="#" class="footer_information-nav-list-item-link">Privacy Policy</a>
-                    </li>
-                    <li class="footer_information-nav-list-item">
-                        <a href="#" class="footer_information-nav-list-item-link">Search</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer__connect container">
-            <p class="footer__connect-title">Connect</p>
-            <input type="text" name="text" placeholder="Email" class="footer__connect-input">
-            <button class="footer__connect-button">Join</button>
-            <ul class="footer__connect-list undotted">
-                <li class="footer__connect-list-item">
-                    <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/facebook.svg" alt="facebook" class="footer__connect-list-item-link-img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/twitter.svg" alt="twitter" class="footer__connect-list-item-link-img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/pinterest.svg" alt="pinterest" class="footer__connect-list-item-link-img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="footer__connect-list-item-link">
-                        <img src="./img/icon/instagram.svg" alt="instagram" class="footer__connect-list-item-link-img">
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
         <div class="footer__bottom container">
             <ul class="footer__bottom-list undotted">
-                <li class="footer__bottom-list-item">
-                    Company Rating 
-                    <input type="radio" name="rating" value="1" checked class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
-                    <input type="radio" name="rating" value="1" class="footer__bottom-list-item-star">
+                <li class="footer__bottom-list-item footer__bottom-rating">
+                    <fieldset class="footer__bottom-list-rating">
+                        Company Rating
+                        <div class="footer__bottom-rating-area">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="grade «5»"></label>	
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="grade «4»"></label>    
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="grade «3»"></label>  
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="grade «2»"></label>    
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="grade «1»"></label>
+                        </div>
+                    </fieldset>
                 </li>
-                <li class="footer__bottom-list-item">Copyright © 2018 Dlk • Design Life Kids</li>
+                <li class="footer__bottom-list-item footer__bottom-copyright">Copyright © 2018 Dlk • Design Life Kids</li>
                 <li class="footer__bottom-list-item transparent">Web Design — Direct Line Development</li>
             </ul>
         </div>
