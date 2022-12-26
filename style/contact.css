@@ -134,6 +134,15 @@
     color: #FFFFFF;
     width: max-content;
     border: 0;
+    cursor: pointer;
+}
+
+.contact__main-submit:hover {
+    background: #C29974;
+}
+
+.contact__main-submit:active {
+    background: #CFAF91;
 }
 
 .contact__text-subtitle {

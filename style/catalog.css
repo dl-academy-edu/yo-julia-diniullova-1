@@ -15,7 +15,7 @@
 
 .category__path {
     display: flex;
-    gap: 50px;
+    gap: 49px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -41,10 +41,10 @@
 }
 
 .category__products-list {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 280px);
-    grid-template-rows: repeat(2, 270px);
+    display: flex;
+    column-gap: 20px;
+    row-gap: 23px;
+    flex-wrap: wrap;
 }
 
 .category__products-list-item {
@@ -53,6 +53,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.category__products-list-item:nth-child(4) {
+    margin-left: 200px;
 }
 
 .category__products-list-item-text {

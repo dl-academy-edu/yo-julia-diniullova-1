@@ -15,7 +15,7 @@
 
 .kids__path {
     display: flex;
-    gap: 50px;
+    gap: 49px;
     position: relative;
 }
 
@@ -144,6 +144,12 @@
 .filter__color-label {
     font-weight: 400;
     display: flex;
+    cursor: pointer;
+}
+
+.filter__color-label:hover {
+    text-decoration: underline;
+    color: #1E0606;
 }
 
 .filter__color-input {
@@ -178,11 +184,21 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    gap: 15px;
+}
+
+.filter__delivery-title {
+    margin-bottom: 15px;
 }
 
 .filter__delivery-label {
     font-weight: 400;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filter__delivery-label:hover {
+    text-decoration-line: underline;
+    color: #1E0606;
 }
 
 .filter__delivery-input {
@@ -220,18 +236,53 @@
     line-height: 22px;
     color: #1E0606;
     border: 0;
-    display: flex;
-    flex-direction: column;
     padding: 0;
 }
 
-.filter____amount-wrapper {
-    display: flex;
-    flex-direction: row;
+.filter__amount-title {
+    margin-bottom: 15px;
+}
+
+.filter__amount-wrapper {
+    display: inline-block;
+}
+
+.filter__amount-item {
+	display: inline-block;
+	float: left;    
+}
+
+.filter__amount-input {
+	display: none;
 }
 
 .filter__amount-label {
+    font-family: 'Open Sans';
     font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+	cursor: pointer;
+	width: 80px;
+    height: 35px;
+	background: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filter__amount-input:checked + label {
+	background: #F3D0DB;
+}
+ 
+.filter__amount-label:hover {
+	background: #EDDEEB;
+    color: #877379;
+}
+
+.filter__apply {
+    margin-top: 37px;
 }
 
 .filter__apply-btn {
@@ -244,6 +295,16 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 9px 22px;
+    border: 0;
+    cursor: pointer;
+}
+
+.filter__apply-btn:hover {
+    background: #C29974;
+}
+
+.filter__apply-btn:active {
+    background: #CFAF91;
 }
 
 .toys {
