@@ -64,7 +64,7 @@
                 </div>
                 <div class="filter__color">
                     <fieldset class="filter__color-fieldset">
-                        Color
+                        <p class="filter__color-title">Color</p>
                             <input type="checkbox" id="black" checked class="filter__color-input">
                             <label for="black" class="filter__color-label">Black</label>
                             <input type="checkbox" id="blue" class="filter__color-input">
@@ -77,23 +77,29 @@
                 </div>
                 <div class="filter__delivery">
                     <fieldset class="filter__delivery-fieldset">
-                        Delivery
-                        <input type="radio" id="free-shipping" class="filter__delivery-input">
+                        <p class="filter__delivery-title">Delivery</p>
+                        <input type="radio" name="radio__delivery" id="free-shipping" class="filter__delivery-input">
                         <label for="free-shipping" class="filter__delivery-label">Free shipping</label>
-                        <input type="radio" id="fast-shipping" checked class="filter__delivery-input">
+                        <input type="radio" name="radio__delivery" id="fast-shipping" checked class="filter__delivery-input">
                         <label for="fast-shipping" class="filter__delivery-label">Fast shipping</label>
                     </fieldset>
                 </div>
                 <div class="filter__amount">
                     <fieldset class="filter__amount-fieldset">
-                        Amount
+                        <p class="filter__amount-title">Amount</p>
                         <div class="filter__amount-wrapper">
-                            <input type="radio" checked class="filter__amount-input">
-                            <label class="filter__amount-label">0-5</label>
-                            <input type="radio" class="filter__amount-input">
-                            <label class="filter__amount-label">10-20</label>
-                            <input type="radio" class="filter__amount-input">
-                            <label class="filter__amount-label">20-50</label>
+                            <div class="filter__amount-item">
+                                <input type="radio" id="0-5" name="radio__amount" checked class="filter__amount-input">
+                                <label for="0-5" class="filter__amount-label">0-5</label>
+                            </div>
+                            <div class="filter__amount-item">
+                                <input type="radio" id="10-20" name="radio__amount" class="filter__amount-input">
+                                <label for="10-20" class="filter__amount-label">10-20</label>
+                            </div>
+                            <div class="filter__amount-item">
+                                <input type="radio" id="20-50" name="radio__amount" class="filter__amount-input">
+                                <label for="20-50" class="filter__amount-label">20-50</label>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
