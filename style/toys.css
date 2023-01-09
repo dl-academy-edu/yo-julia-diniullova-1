@@ -335,10 +335,63 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.toys__catalog-block {
+    background-color: #E5EAF8;
+    width: 207px;
+    height: 207px;
+    position: absolute;
+    top: 700px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.toys__catalog-block-two {
+    background-color: #E5EAF8;
+    width: 207px;
+    height: 207px;
+    position: absolute;
+    top: 1230px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.toys__catalog-hover {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    color: #1E0606; 
 }
 
 .toys__catalog-list-img {
     margin-bottom: 30px;
+    display: flex;
+    position: relative;
+}
+
+.toys__catalog-list-item:hover .toys__catalog-block {
+    opacity: 0.9;
+}
+
+.toys__catalog-list-item:active .toys__catalog-block {
+    opacity: 0.67;
+}
+
+.toys__catalog-list-item:hover .toys__catalog-block-two {
+    opacity: 0.9;
+}
+
+.toys__catalog-list-item:active .toys__catalog-block-two {
+    opacity: 0.67;
 }
 
 .toys__catalog-list-desc {

@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.category__products-list-item-img {
+    background-color: #DBE4DB;
+}
+
 .category__products-list-item:nth-child(4) {
     margin-left: 200px;
 }

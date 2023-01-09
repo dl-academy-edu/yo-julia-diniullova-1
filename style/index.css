@@ -146,6 +146,10 @@
     justify-content: center;
 }
 
+.category__products-list-item-img {
+    background-color: #DBE4DB;
+}
+
 .category__products-list-item:nth-child(4) {
     margin-right: 0;
 }
@@ -257,6 +261,7 @@
 
 .delivery__img {
     margin-right: 120px;
+    background-color: rgba(112, 187, 220, 0.2);
 }
 
 .delivery__text-title {
