@@ -336,6 +336,10 @@
     margin-bottom: 114px;
 }
 
+.awards__title {
+    display: none;
+}
+
 .awards__list {
     display: flex;
     align-items: flex-end;

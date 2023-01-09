@@ -51,6 +51,10 @@
     margin-bottom: 60px;
 }
 
+.filter__title {
+    display: none;
+}
+
 .filter__wrapper {
     display: flex;
     padding-top: 42px;
@@ -309,6 +313,10 @@
 
 .toys {
     margin-bottom: 57px;
+}
+
+.toys__title {
+    display: none;
 }
 
 .toys__catalog {
